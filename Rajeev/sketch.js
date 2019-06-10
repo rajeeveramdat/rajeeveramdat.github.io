@@ -51,6 +51,8 @@ function draw() {
   circle(x,y,45)
   fill(0,0,250)
  
+if (touches.length == 0)   {
+}
 
   
  if (keyIsDown(LEFT_ARROW)){
@@ -65,6 +67,10 @@ function draw() {
   if (keyIsDown(DOWN_ARROW)){
     y = y + 5
   }
+else { 
+x = touches[0].x
+y = touches[0].y
+}
 
 
   circle(b,c,60)
